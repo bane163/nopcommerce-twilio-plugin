@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Nop.Plugin.SMS.Twillio.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Nop_Plugin_SMS_Twillio_Account_Sid" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ACad9e1c2bc8dace0e68c9c70768bf8b68</Value>
+    </Setting>
+    <Setting Name="Nop_Plugin_SMS_Twillio_Auth_Token" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c28e977562762d1b85985256b3ac0e69</Value>
+    </Setting>
+    <Setting Name="Nop_Plugin_SMS_Twillio_Trial_Number" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">7542129100</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

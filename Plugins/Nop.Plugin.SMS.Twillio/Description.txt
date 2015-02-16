@@ -1,0 +1,8 @@
+﻿Group: SMS providers
+FriendlyName: Twillio SMS Provider
+SystemName: SMS.Twillio
+Version: 1.00
+SupportedVersions: 3.40
+Author: Freeman Senecharles
+DisplayOrder: 1
+FileName: Nop.Plugin.SMS.Twillio.dll
