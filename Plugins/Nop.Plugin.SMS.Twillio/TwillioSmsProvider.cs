@@ -53,7 +53,7 @@ namespace Nop.Plugin.SMS.Twillio
         {
             try
             {
-                var client = new TwilioRestClient(Properties.Settings.Default.Nop_Plugin_SMS_Twillio_Account_Sid, Properties.Settings.Default.Nop_Plugin_SMS_Twillio_Auth_Token);                
+                //var client = new TwilioRestClient(Properties.Settings.Default.Nop_Plugin_SMS_Twillio_Account_Sid, Properties.Settings.Default.Nop_Plugin_SMS_Twillio_Auth_Token);                
                 //client.SendMessage(Properties.Settings.Default.Nop_Plugin_SMS_Twillio_Trial_Number, _twillioSettings.SmsNumber, "Test Message");
                 var queuedSms = new QueuedSms()
                 {
@@ -136,6 +136,9 @@ namespace Nop.Plugin.SMS.Twillio
             this.AddOrUpdatePluginLocaleResource("Plugins.Sms.Twillio.Fields.TestMessage.Hint", "Text of the test message");
             this.AddOrUpdatePluginLocaleResource("Plugins.Sms.Twillio.SendTest", "Send");
             this.AddOrUpdatePluginLocaleResource("Plugins.Sms.Twillio.SendTest.Hint", "Send test message");
+            this.AddOrUpdatePluginLocaleResource("Plugins.Sms.Twillio.Fields.SmsNumber", "To Number");
+
+            
 
             InstallScheduleTask();
             base.Install();
@@ -162,6 +165,9 @@ namespace Nop.Plugin.SMS.Twillio
             this.DeletePluginLocaleResource("Plugins.Sms.Twillio.Fields.TestMessage.Hint");
             this.DeletePluginLocaleResource("Plugins.Sms.Twillio.SendTest");
             this.DeletePluginLocaleResource("Plugins.Sms.Twillio.SendTest.Hint");
+            this.DeletePluginLocaleResource("Plugins.Sms.Twillio.Fields.SmsNumber");
+            
+
 
             var task = FindScheduledTask();
             if (task != null)
